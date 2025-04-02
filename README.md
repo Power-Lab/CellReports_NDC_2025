@@ -41,9 +41,9 @@ The size of the GitHub repository is around 100 MB, so it should only take a few
 ## 3.2 Add additional data inputs from Google Drive
 Large data files in the `data_pkl`, `data_shp`, and `data_mat` folders are not stored on GitHub due to the file size limit. Instead, these files are stored on the project Zenodo directory. Before running the code, you will have to copy the files in the shared folder to the corresponding locations, by taking the following two steps:
 
-1. Download the `data_pkl`, `data_shp`, and `data_mat` folders from the Zenodo directory specified in the manuscript.
-2. Move the `data_pkl`, `data_shp`, and `data_mat` folders to the `CellReports_NDC_2025` directory
-3. Create a `data_res` folder in the `CellReports_NDC_2025` directory as a placeholder for outputs
+1. Download the `data_pkl`, `data_shp`, and `data_mat` folders in `CellReports_NDC_2025` from the Zenodo directory: https://doi.org/10.5281/zenodo.15122725
+2. Move the `data_pkl`, `data_shp`, and `data_mat` folders to the local `CellReports_NDC_2025` directory
+3. Create a `data_res` folder in the local `CellReports_NDC_2025` directory as a placeholder for outputs
 
 The size of the additional data inputs is around 7 GB.
 
