@@ -38,7 +38,7 @@ https://github.com/Power-Lab/CellReports_NDC_2025 -- this repository includes ht
 
 The size of the GitHub repository is around 100 MB, so it should only take a few minutes to install with a "normal" internet connection.
 
-## 3.2 Add additional data inputs from Google Drive
+## 3.2 Add additional data inputs from Zenodo
 Large data files in the `data_pkl`, `data_shp`, and `data_mat` folders are not stored on GitHub due to the file size limit. Instead, these files are stored on the project Zenodo directory. Before running the code, you will have to copy the files in the shared folder to the corresponding locations, by taking the following two steps:
 
 1. Download the `data_pkl`, `data_shp`, and `data_mat` folders in `CellReports_NDC_2025` from the Zenodo directory: https://doi.org/10.5281/zenodo.15122725
