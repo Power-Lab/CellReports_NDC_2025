@@ -108,31 +108,31 @@ After you log into the cluster, you can submit the shell script and wait for it 
 ## 5.3 Reproduction instructions
 To reproduce all the quantitative results in the manuscript, take the following steps (assume that the model runs remotely on a cloud computing system):
 1. Group A: Moderate Growth
-	- A1: `$ python CellReports_NDC_2025/pycode/testNDC.py 365 2030 2 a1 2C 2040 chp_ccs baseline 1 none 3500 ndc w2015_s2015 none`
-    - A2: `$ python CellReports_NDC_2025/pycode/testNDC.py 365 2030 2 a2 2C 2040 chp_ccs conservative 1 none 3500 ndc w2015_s2015 none`
-    - A3: `$ python CellReports_NDC_2025/pycode/testNDC.py 365 2030 2 a3 2C 2040 chp_ccs low_wind 1 none 3500 ndc w2015_s2015 none`
-    - A4: `$ python CellReports_NDC_2025/pycode/testNDC.py 365 2030 2 a4 2C 2040 chp_ccs low_bat 1 none 3500 ndc w2015_s2015 none`
-    - A5: `$ python CellReports_NDC_2025/pycode/testNDC.py 365 2030 2 a5 2C 2040 chp_ccs baseline 1 2030b_2035p10 3500 ndc w2015_s2015 none`
+	- A1: `$ python CellReports_NDC_2025/pycode/runNDC.py 365 2030 2 a1 2C 2040 chp_ccs baseline 1 none 3500 ndc w2015_s2015 none`
+    - A2: `$ python CellReports_NDC_2025/pycode/runNDC.py 365 2030 2 a2 2C 2040 chp_ccs conservative 1 none 3500 ndc w2015_s2015 none`
+    - A3: `$ python CellReports_NDC_2025/pycode/runNDC.py 365 2030 2 a3 2C 2040 chp_ccs low_wind 1 none 3500 ndc w2015_s2015 none`
+    - A4: `$ python CellReports_NDC_2025/pycode/runNDC.py 365 2030 2 a4 2C 2040 chp_ccs low_bat 1 none 3500 ndc w2015_s2015 none`
+    - A5: `$ python CellReports_NDC_2025/pycode/runNDC.py 365 2030 2 a5 2C 2040 chp_ccs baseline 1 2030b_2035p10 3500 ndc w2015_s2015 none`
 2. Group B: Rapid Electrification
-	- B1: `$ python CellReports_NDC_2025/pycode/testNDC.py 365 2030 2 b1 2C 2040 chp_ccs baseline 1 2030m10_2035b 3500 ndc w2015_s2015 none`
-    - B2: `$ python CellReports_NDC_2025/pycode/testNDC.py 365 2030 2 b2 2C 2040 chp_ccs conservative 1 2030m10_2035b 3500 ndc w2015_s2015 none`
-    - B3: `$ python CellReports_NDC_2025/pycode/testNDC.py 365 2030 2 b3 2C 2040 chp_ccs low_wind 1 2030m10_2035b 3500 ndc w2015_s2015 none`
-    - B4: `$ python CellReports_NDC_2025/pycode/testNDC.py 365 2030 2 b4 2C 2040 chp_ccs low_bat 1 2030m10_2035b 3500 ndc w2015_s2015 none`
-    - B5: `$ python CellReports_NDC_2025/pycode/testNDC.py 365 2030 2 b5 2C 2040 chp_ccs baseline 1 2030m10_2035m10 3500 ndc w2015_s2015 none`
+	- B1: `$ python CellReports_NDC_2025/pycode/runNDC.py 365 2030 2 b1 2C 2040 chp_ccs baseline 1 2030m10_2035b 3500 ndc w2015_s2015 none`
+    - B2: `$ python CellReports_NDC_2025/pycode/runNDC.py 365 2030 2 b2 2C 2040 chp_ccs conservative 1 2030m10_2035b 3500 ndc w2015_s2015 none`
+    - B3: `$ python CellReports_NDC_2025/pycode/runNDC.py 365 2030 2 b3 2C 2040 chp_ccs low_wind 1 2030m10_2035b 3500 ndc w2015_s2015 none`
+    - B4: `$ python CellReports_NDC_2025/pycode/runNDC.py 365 2030 2 b4 2C 2040 chp_ccs low_bat 1 2030m10_2035b 3500 ndc w2015_s2015 none`
+    - B5: `$ python CellReports_NDC_2025/pycode/runNDC.py 365 2030 2 b5 2C 2040 chp_ccs baseline 1 2030m10_2035m10 3500 ndc w2015_s2015 none`
 3. Group C: Ambitious Decarbonization
-	- C1: `$ python CellReports_NDC_2025/pycode/testNDC.py 365 2030 2 c1 15C 2040 chp_ccs baseline 1 none 3500 ndc w2015_s2015 none`
-    - C2: `$ python CellReports_NDC_2025/pycode/testNDC.py 365 2030 2 c2 15C 2040 chp_ccs conservative 1 none 3500 ndc w2015_s2015 none`
-    - C3: `$ python CellReports_NDC_2025/pycode/testNDC.py 365 2030 2 c3 15C 2040 chp_ccs low_wind 1 none 3500 ndc w2015_s2015 none`
-    - C4: `$ python CellReports_NDC_2025/pycode/testNDC.py 365 2030 2 c4 15C 2040 chp_ccs low_bat 1 none 3500 ndc w2015_s2015 none`
-    - C5: `$ python CellReports_NDC_2025/pycode/testNDC.py 365 2030 2 c5 15C 2040 chp_ccs baseline 1 2030b_2035p10 3500 ndc w2015_s2015 none`
+	- C1: `$ python CellReports_NDC_2025/pycode/runNDC.py 365 2030 2 c1 15C 2040 chp_ccs baseline 1 none 3500 ndc w2015_s2015 none`
+    - C2: `$ python CellReports_NDC_2025/pycode/runNDC.py 365 2030 2 c2 15C 2040 chp_ccs conservative 1 none 3500 ndc w2015_s2015 none`
+    - C3: `$ python CellReports_NDC_2025/pycode/runNDC.py 365 2030 2 c3 15C 2040 chp_ccs low_wind 1 none 3500 ndc w2015_s2015 none`
+    - C4: `$ python CellReports_NDC_2025/pycode/runNDC.py 365 2030 2 c4 15C 2040 chp_ccs low_bat 1 none 3500 ndc w2015_s2015 none`
+    - C5: `$ python CellReports_NDC_2025/pycode/runNDC.py 365 2030 2 c5 15C 2040 chp_ccs baseline 1 2030b_2035p10 3500 ndc w2015_s2015 none`
 4. Sensitivity Analysis: Weather Year 2019
-	- A1 weather year 2019: `$ python CellReports_NDC_2025/pycode/testNDC.py 365 2030 2 a1_wy19 2C 2040 chp_ccs baseline 1 none 3500 ndc w2024_s2024 none`
-    - A2 weather year 2019: `$ python CellReports_NDC_2025/pycode/testNDC.py 365 2030 2 a2_wy19 2C 2040 chp_ccs conservative 1 none 3500 ndc w2024_s2024 none`
-    - A3 weather year 2019: `$ python CellReports_NDC_2025/pycode/testNDC.py 365 2030 2 a3_wy19 2C 2040 chp_ccs low_wind 1 none 3500 ndc w2024_s2024 none`
-    - A4 weather year 2019: `$ python CellReports_NDC_2025/pycode/testNDC.py 365 2030 2 a4_wy19 2C 2040 chp_ccs low_bat 1 none 3500 ndc w2024_s2024 none`
-    - A5 weather year 2019: `$ python CellReports_NDC_2025/pycode/testNDC.py 365 2030 2 a5_wy19 2C 2040 chp_ccs baseline 1 2030b_2035p10 3500 ndc w2024_s2024 none`
-    - B1 weather year 2019: `$ python CellReports_NDC_2025/pycode/testNDC.py 365 2030 2 b1_wy19 2C 2040 chp_ccs baseline 1 2030m10_2035b 3500 ndc w2024_s2024 none`
-    - C1 weather year 2019: `$ python CellReports_NDC_2025/pycode/testNDC.py 365 2030 2 c1_wy19 15C 2040 chp_ccs baseline 1 none 3500 ndc w2024_s2024 none`
+	- A1 weather year 2019: `$ python CellReports_NDC_2025/pycode/runNDC.py 365 2030 2 a1_wy19 2C 2040 chp_ccs baseline 1 none 3500 ndc w2024_s2024 none`
+    - A2 weather year 2019: `$ python CellReports_NDC_2025/pycode/runNDC.py 365 2030 2 a2_wy19 2C 2040 chp_ccs conservative 1 none 3500 ndc w2024_s2024 none`
+    - A3 weather year 2019: `$ python CellReports_NDC_2025/pycode/runNDC.py 365 2030 2 a3_wy19 2C 2040 chp_ccs low_wind 1 none 3500 ndc w2024_s2024 none`
+    - A4 weather year 2019: `$ python CellReports_NDC_2025/pycode/runNDC.py 365 2030 2 a4_wy19 2C 2040 chp_ccs low_bat 1 none 3500 ndc w2024_s2024 none`
+    - A5 weather year 2019: `$ python CellReports_NDC_2025/pycode/runNDC.py 365 2030 2 a5_wy19 2C 2040 chp_ccs baseline 1 2030b_2035p10 3500 ndc w2024_s2024 none`
+    - B1 weather year 2019: `$ python CellReports_NDC_2025/pycode/runNDC.py 365 2030 2 b1_wy19 2C 2040 chp_ccs baseline 1 2030m10_2035b 3500 ndc w2024_s2024 none`
+    - C1 weather year 2019: `$ python CellReports_NDC_2025/pycode/runNDC.py 365 2030 2 c1_wy19 15C 2040 chp_ccs baseline 1 none 3500 ndc w2024_s2024 none`
 
 
 
