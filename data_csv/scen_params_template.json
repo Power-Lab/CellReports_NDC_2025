@@ -1,0 +1,200 @@
+{
+    "scenario":
+    {
+        "comply_with_medium_vre_goal": 0,
+        "endogenize_firm_capacity": 1,
+        "ccs_start_year": 2040,
+        "emission_target": "2C",
+        "heating_electrification": "chp_ccs",
+        "emission_factor_method": "mean",
+        "renewable_cost_decline": "baseline",
+        "demand_sensitivity": "+5",
+        "run_mode": "china-re-pathways",
+        "ptc_mode": "none"
+    },
+    "optimization_hours":
+    {
+        "years": 0,
+        "step": 10,
+        "days": 5
+    },
+    "finance":
+    {
+        "weighted_average_cost_of_capital": 7.4
+    },
+    "lifespan":
+    {
+        "transmission_spur": 25,
+        "transmission_trunk": 50,
+        "storage_phs": 40,
+        "storage_bat": 15
+    },
+    "trans":
+    {
+        "capex_spur_fixed": 262,
+        "capex_spur_var": 3,
+        "capex_trunk_fixed": 159,
+        "capex_trunk_var": 1.76,
+        "trans_loss": 0.000032,
+        "interprovincial_scale": 1,
+        "is_full_inter_province": 0,
+        "trunk_inter_province": 0
+    },
+    "storage":
+    {
+        "duration_phs": 8,
+        "duration_bat": 4,
+        "duration_lds":
+        {
+            "caes": 20,
+            "vrb": 10
+        },
+        "sdiss_phs": 0,
+        "sdiss_bat": 0,
+        "sdiss_lds":
+        {
+            "caes": 0,
+            "vrb": 0
+        },
+        "capex_power_phs": 3840,
+        "capex_power_bat": 2700,
+        "capex_power_lds":
+        {
+            "caes": 4800,
+            "vrb": 3000
+        },
+        "capex_energy_phs": 0,
+        "capex_energy_bat": 0,
+        "capex_energy_lds":
+        {
+            "caes": 0,
+            "vrb": 0
+        },
+        "rt_effi_phs": 0.78,
+        "rt_effi_bat": 0.95,
+        "rt_effi_lds":
+        {
+            "caes": 0.52,
+            "vrb": 0.7
+        },
+        "fixed_omc_phs": 39,
+        "fixed_omc_bat": 18,
+        "fixed_omc_lds":
+        {
+            "caes": 50,
+            "vrb": 18
+        },
+        "var_omc_phs": 0.0015,
+        "var_omc_bat": 0.02,
+        "var_omc_lds":
+        {
+            "caes": 0.003,
+            "vrb": 0.02
+        },
+        "with_lds": 1,
+        "with_caes": 1,
+        "with_vrb": 1,
+        "span_lds":
+        {
+            "caes": 30,
+            "vrb": 15
+        }
+    },
+    "vre":
+    {
+        "cap_scale_pv": 1,
+        "cap_scale_wind": 1,
+        "cap_scale_wind_ep": 1,
+        "cap_scale_pv_ep": 1,
+        "capex_equip_pv": 1100,
+        "capex_equip_dpv": 1400,
+        "capex_equip_on_wind": 2200,
+        "capex_equip_off_wind": 3800,
+        "capex_other_pv": 400,
+        "capex_other_dpv": 600,
+        "capex_other_on_wind": 800,
+        "capex_other_off_wind": 1600,
+        "capex_om_on_wind": 45,
+        "capex_om_off_wind": 81,
+        "capex_om_pv": 7.5,
+        "capex_om_dpv": 10,
+        "aggregated": 0,
+        "inter_annual": 0,
+        "wind_with_xz": 0
+    },
+    "nuclear":
+    {
+        "must_run": 0.85,
+        "capex": 15000,
+        "opex": 629,
+        "var_cost": 0.07,
+        "lifespan": 50,
+        "beta": 1
+    },
+    "hydro": {
+        "capex": 9900,
+        "opex": 268,
+        "var_cost": 0,
+        "lifespan": 50,
+        "beta": 1
+    },
+    "beccs": {
+        "must_run": 0.8,
+        "capex": 15700,
+        "opex": 750,
+        "var_cost": 0.59,
+        "lifespan": 35
+    },
+    "coal":
+    {
+        "capex": 0,
+        "opex": 62,
+        "var_cost": 0.3095,
+        "lifespan": 40,
+        "beta": 1
+    },
+    "gas":
+    {
+        "capex": 0,
+        "opex": 98,
+        "var_cost": 0.62,
+        "lifespan": 30,
+        "beta": 1
+    },
+    "ramp":
+    {
+        "l1": 0.25,
+        "l2": 0.25,
+        "l3": 0.05,
+        "l4": 0.5
+    },
+    "ccs":
+    {
+        "capex_coal_ccs": 3500,
+        "capex_gas_ccs": 3500,
+        "opex_coal_ccs": 446,
+        "opex_gas_ccs": 262,
+        "coal_loss": 0.05,
+        "gas_loss": 0.05,
+        "bio_loss": 0.05
+    },
+    "demand":
+    {
+        "scale": 1
+    },
+    "resv":
+    {
+        "vre_resv": 0.05,
+        "demand_resv": 0.05,
+        "with_demand_resv": 1,
+        "with_vre_resv": 1,
+        "vre_resv_provincialy": 0
+    },
+    "shedding":
+    {
+        "with_shedding": 0,
+        "shedding_vom": 2,
+        "shedding_cof": 0.1
+    }
+
+}
