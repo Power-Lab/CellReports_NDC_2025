@@ -1,7 +1,7 @@
 # 1. Overview for the China NDC Project
 This repository contains the renewable capacity expansion model for China's power sector for the study **"Ratcheting up wind and solar targets for decarbonizing the power sector in China and beyond"**. The model is written using [Python](https://www.python.org/).
 
-You can use the model for conducting both single-year snapshot analysis and multi-year pathway study. In the multi-year scenario, if the outputs from the last period are missing, the model will use the existing default inputs as the initial conditions.
+You can use the model for conducting both single-year snapshot analysis and multi-year pathway study. In the multi-year case, if the outputs from the last period are missing, the model will use the existing default inputs as the initial conditions.
 
 Contact Zhenhua (`zhenhua at ucsd dot edu`) if you run into any issues.
 
@@ -31,18 +31,18 @@ Make sure that you have a valid Gurobi license for using the Gurobi optimization
 
 
 # 3. Installation guide
-The installation consists of two parts: (1) pull from the GitHub repository, and (2) download additional data inputs from the project Zenodo directory.
+The installation consists of two parts: (1) pull from the GitHub repository, and (2) download additional data inputs from the Zenodo directory.
 
 ## 3.1 Pull from the GitHub repository
-https://github.com/Power-Lab/CellReports_NDC_2025 -- this repository includes hte main optimization model, small data inputs, results, visualization/analysis scripts, and the generated plots. Additionally, we also include the shell scripts for running the model on a cloud computing system.
+https://github.com/Power-Lab/CellReports_NDC_2025 -- this repository includes the optimization model, small data inputs, visualization/analysis scripts, and the generated plots.
 
 The size of the GitHub repository is around 100 MB, so it should only take a few minutes to install with a "normal" internet connection.
 
 ## 3.2 Add additional data inputs from Zenodo
 Large data files in the `data_pkl`, `data_shp`, and `data_mat` folders are not stored on GitHub due to the file size limit. Instead, these files are stored on the project Zenodo directory. Before running the code, you will have to copy the files in the shared folder to the corresponding locations, by taking the following two steps:
 
-1. Download the `data_pkl`, `data_shp`, and `data_mat` folders in `CellReports_NDC_2025` from the Zenodo directory: https://doi.org/10.5281/zenodo.15122725
-2. Move the `data_pkl`, `data_shp`, and `data_mat` folders to the local `CellReports_NDC_2025` directory
+1. Download the `data_pkl`, `data_shp`, and `data_mat` folders in `CellReports_NDC_2025_full` from Zenodo: https://doi.org/10.5281/zenodo.15122725
+2. Move the `data_pkl`, `data_shp`, and `data_mat` folders in `CellReports_NDC_2025_full` to the local `CellReports_NDC_2025` directory
 3. Create a `data_res` folder in the local `CellReports_NDC_2025` directory as a placeholder for outputs
 
 The size of the additional data inputs is around 7 GB.
